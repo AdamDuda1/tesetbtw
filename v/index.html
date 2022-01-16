@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentUp - Strona główna</title>
+</head>
+
+<body onload="localStorageLoad(), browserCheck()">
+
+    <script>
+        przegladarka = "niezidentyfikowano";
+
+        function localStorageLoad() {
+            //localStorage.clear();
+            localStorage.setItem("screenWidht", screen.width);
+            localStorage.setItem("screenWidht", screen.width);
+            localStorage.setItem("screenSize", screen.width + " x " + screen.height);
+        }
+        function browserCheck() {
+            console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
+            console.log("" + screen.width + " x " + screen.height);
+            if (navigator.appName == "Microsoft Internet Explorer") {
+                przegladarka = "Internet Explorer";
+                alert("Twoja przeglądarka (" + przegladarka + "), nie obsłógóje najnowszych technologii jest już nie wspierana. Z tego powodu, strona może działać nie poprawnie.");
+            }
+
+
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
