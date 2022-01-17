@@ -9,6 +9,11 @@
 </head>
 
 <body att="to nie dla cb" onload="localStorageLoad(), browserCheck(), setup()">
+    
+    <?php 
+    echo "dx"
+    >
+    
     <i id="?PostHTTPserverDNS"></i>
     <i id="?usgFREMEWORK=win32"></i>
     <i id="docsWgoogleFirebase=goog.leDev"></i>
