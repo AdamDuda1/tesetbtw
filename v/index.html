@@ -9,15 +9,23 @@
 </head>
 
 <body onload="localStorageLoad(), browserCheck()">
-
+    <span id="info">test</span>
     <script>
         przegladarka = "niezidentyfikowano";
 
         function localStorageLoad() {
             //localStorage.clear();
-            localStorage.setItem("screenWidht", screen.width);
-            localStorage.setItem("screenWidht", screen.width);
-            localStorage.setItem("screenSize", screen.width + " x " + screen.height);
+            info = localStorage.setItem("theme", "light");
+            info = info + sessionStorage.setItem("screenWidht", screen.width);
+            info = info + sessionStorage.setItem("screenHeight", screen.height);
+            info = info + sessionStorage.setItem("screenSize", screen.width + " x " + screen.height);
+            info = info + sessionStorage.setItem("browserCodeName", navigator.appCodeName);
+            info = info + sessionStorage.setItem("browserName", navigator.appName);
+            info = info + sessionStorage.setItem("browserVersion", navigator.appVersion);
+            info = info + sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
+            info = info + sessionStorage.setItem("platformCodeName", navigator.platform);
+            info = info + sessionStorage.setItem("userAgent", navigator.userAgent);
+            document.getElementById("info").innerHTML = info;
         }
         function browserCheck() {
             console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
