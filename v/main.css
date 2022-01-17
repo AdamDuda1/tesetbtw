@@ -2,6 +2,10 @@
     --black: #fff;
     --white: #000;
 }
+::selection {color: red;}
+* {
+    margin: 0;
+}
 html {
     width: 100%;
     height: 100%;
