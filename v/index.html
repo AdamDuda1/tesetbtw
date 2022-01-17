@@ -23,7 +23,7 @@
         przegladarka = "niezidentyfikowano";
         const HTrequet = document.getElementById("HTrequest");
         function setup() {
-            HTrequet.innerHTML = navigator.appName;
+            HTrequet.innerHTML = "Twoja przeglądarka posiada jądro oparte na systemie " + navigator.appName + ". Twój wyświetlacz ma proporcie " + screen.width + " x " + screen.height + ". Twój system to " + navigator.platform;
         }
         
         function localStorageLoad() {
