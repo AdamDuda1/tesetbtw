@@ -8,12 +8,24 @@
     <title>TalentUp - Strona główna</title>
 </head>
 
-<body att="to nie dla cb" onload="localStorageLoad(), browserCheck()">
+<body att="to nie dla cb" onload="localStorageLoad(), browserCheck(), setup()">
+    <i id="?PostHTTPserverDNS"></i>
+    <i id=""></i>
+    <i id=""></i>
+    <i id=""></i>
+    <i id=""></i>
+    <i id=""></i>
+    <i id=""></i>
+    <i id=""></i>
     shakowałem twój komputer
     <span id="info">test</span>
     <script>
         przegladarka = "niezidentyfikowano";
 
+        function setup() {
+            
+        }
+        
         function localStorageLoad() {
             //localStorage.clear();
             info = localStorage.setItem("theme", "light");
