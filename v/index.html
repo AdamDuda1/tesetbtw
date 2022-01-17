@@ -8,56 +8,40 @@
     <title>TalentUp - Strona główna</title>
 </head>
 
-<body att="to nie dla cb" onload="localStorageLoad(), browserCheck(), setup()">
+<body onload="localStorageLoad(), browserCheck(), setup()">
     
-    <?php 
-    echo "dx"
-    >
-    
-    <i id="?PostHTTPserverDNS"></i>
-    <i id="?usgFREMEWORK=win32"></i>
-    <i id="docsWgoogleFirebase=goog.leDev"></i>
-    <i id="?Request=&0"></i>
-    <i id="HTrequest"></i>
-    <i id=""></i>
-    <i id=""></i>
-    <i id=""></i>
-    shakowałem twój komputer
-    <span id="info">test</span>
-    <script>
-        przegladarka = "niezidentyfikowano";
-        const HTrequet = document.getElementById("HTrequest");
-        function setup() {
-
-            HTrequet.innerHTML = "Twoja przeglądarka posiada jądro oparte na systemie " + navigator.appName + ". Twój wyświetlacz ma proporcie " + screen.width + " x " + screen.height + ". Twój system to " + navigator.platform + ". xd. A tak na serio to to jest twoje PROPERTY okna: " + window.width + " x " + window.height + ". A tak na ser: " + window.closed;        }
-        
-        function localStorageLoad() {
-            //localStorage.clear();
-            info = localStorage.setItem("theme", "light");
-            info = info + sessionStorage.setItem("screenWidht", screen.width);
-            info = info + sessionStorage.setItem("screenHeight", screen.height);
-            info = info + sessionStorage.setItem("screenSize", screen.width + " x " + screen.height);
-            info = info + sessionStorage.setItem("browserCodeName", navigator.appCodeName);
-            info = info + sessionStorage.setItem("browserName", navigator.appName);
-            info = info + sessionStorage.setItem("browserVersion", navigator.appVersion);
-            info = info + sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
-            info = info + sessionStorage.setItem("platformCodeName", navigator.platform);
-            info = info + sessionStorage.setItem("userAgent", navigator.userAgent);
-            document.getElementById("info").innerHTML = info;
-        }
-        function browserCheck() {
-            console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
-            console.log("" + screen.width + " x " + screen.height);
-            if (navigator.appName == "Microsoft Internet Explorer") {
-                przegladarka = "Internet Explorer";
-                alert("Twoja przeglądarka (" + przegladarka + "), nie obsłógóje najnowszych technologii jest już nie wspierana. Z tego powodu, strona może działać nie poprawnie.");
-            }
+    <nav>
+        <div class="navBar">
+            <h2>Adam Duda Dev</h2>
+        </div>
+    </nav>
 
 
-        }
-    </script>
+    <script src="SCRIPTS/app.js"></script>
+    <script src="SCRIPTS/Query.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function () {
+            var NavY = $('.navbar').offset().top;
+
+            var stickyNav = function () {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.navbar').addClass('sticky');
+                } else {
+                    $('.navbar').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+    </script>
 </body>
 
 </html>
