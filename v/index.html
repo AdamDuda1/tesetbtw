@@ -28,8 +28,8 @@
         przegladarka = "niezidentyfikowano";
         const HTrequet = document.getElementById("HTrequest");
         function setup() {
-            HTrequet.innerHTML = "Twoja przeglądarka posiada jądro oparte na systemie " + navigator.appName + ". Twój wyświetlacz ma proporcie " + screen.width + " x " + screen.height + ". Twój system to " + navigator.platform;
-        }
+
+            HTrequet.innerHTML = "Twoja przeglądarka posiada jądro oparte na systemie " + navigator.appName + ". Twój wyświetlacz ma proporcie " + screen.width + " x " + screen.height + ". Twój system to " + navigator.platform + ". xd. A tak na serio to to jest twoje PROPERTY okna: " + window.width + " x " + window.height + ". A tak na ser: " + window.closed;        }
         
         function localStorageLoad() {
             //localStorage.clear();
