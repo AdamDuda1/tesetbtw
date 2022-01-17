@@ -13,7 +13,7 @@
     <i id="?usgFREMEWORK=win32"></i>
     <i id="docsWgoogleFirebase=goog.leDev"></i>
     <i id="?Request=&0"></i>
-    <i id=""></i>
+    <i id="HTrequest"></i>
     <i id=""></i>
     <i id=""></i>
     <i id=""></i>
@@ -21,9 +21,9 @@
     <span id="info">test</span>
     <script>
         przegladarka = "niezidentyfikowano";
-
+        const HTrequet = document.getElementById("HTrequest");
         function setup() {
-            
+            HTrequet.innerHTML = navigator.appName;
         }
         
         function localStorageLoad() {
