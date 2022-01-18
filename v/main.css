@@ -53,6 +53,7 @@ body {
 
 
 header.headerElementsText {
+    display: flex;
     z-index: 50;
     color: #fff;
     position: fixed;
