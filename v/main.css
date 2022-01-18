@@ -64,8 +64,8 @@ header.headerElementsText {
     z-index: 2;
     color: #fff;
     position: absolute;
-    right: 50px;
-    bottom: 120px;
+    right: 50%;
+    bottom: 110px;
 }
 header img.headerBack {
     width: 100%;
