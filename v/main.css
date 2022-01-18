@@ -60,13 +60,15 @@ body {
 }
 
 
-header.headerElementsText {z-index: 2;
+header.headerElementsText {
+    z-index: 2;
     color: #fff;
     position: absolute;
     right: 50px;
     bottom: 120px;
 }
 header img.headerBack {
+    width: 100%;
     z-index: 0;
 }
 
