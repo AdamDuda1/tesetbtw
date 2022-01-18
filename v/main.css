@@ -54,7 +54,7 @@ body {
 
 header.headerElementsText {
     color: #fff;    
-    position: absolute;
+    position: relative;
     left: 50%;
 }
 header img.headerBack {
