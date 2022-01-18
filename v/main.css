@@ -62,7 +62,6 @@ body {
 
 
 header.headerElementsText {
-    z-index: 50;
     color: #fff;
     position: absolute;
     right: 50%;
@@ -70,7 +69,6 @@ header.headerElementsText {
 }
 header img.headerBack {
 	position: relative;
-    z-index: 1;
     width: 100%;
 }
 
