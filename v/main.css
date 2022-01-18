@@ -39,7 +39,11 @@ body {
 }
 .navBarLogo {
     position: relative;
-    right: 100px;
+    right: 10%;
+}
+.navBarElements {
+    position: relative;
+    right: 40%;
 }
 .navbar ul {display: inline-block;}
 .navbar ul a {display: block;}
