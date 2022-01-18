@@ -1,15 +1,15 @@
 
 function localStoradgeLoad() {
-    info = localStorage.setItem("theme", "light");
-    info = info + sessionStorage.setItem("screenWidht", screen.width);
-    info = info + sessionStorage.setItem("screenHeight", screen.height);
-    info = info + sessionStorage.setItem("screenSize", screen.width + " x " + screen.height);
-    info = info + sessionStorage.setItem("browserCodeName", navigator.appCodeName);
-    info = info + sessionStorage.setItem("browserName", navigator.appName);
-    info = info + sessionStorage.setItem("browserVersion", navigator.appVersion);
-    info = info + sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
-    info = info + sessionStorage.setItem("platformCodeName", navigator.platform);
-    info = info + sessionStorage.setItem("userAgent", navigator.userAgent);
+        localStorage.setItem("theme", "light");
+        sessionStorage.setItem("screenWidht", screen.width);
+        sessionStorage.setItem("screenHeight", screen.height);
+        sessionStorage.setItem("screenSize", screen.width + " x " + screen.height);
+        sessionStorage.setItem("browserCodeName", navigator.appCodeName);
+        sessionStorage.setItem("browserName", navigator.appName);
+        sessionStorage.setItem("browserVersion", navigator.appVersion);
+        sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
+        sessionStorage.setItem("platformCodeName", navigator.platform);
+        sessionStorage.setItem("userAgent", navigator.userAgent);
 }
 function browserCheck() {
         console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
