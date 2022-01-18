@@ -1,14 +1,14 @@
-launguage = "Polish"; // 
+launguage = "Polish"; // English
 
 (function translate() {
     launguage = "English";
-    localStorage.setItem("launguage", launguage);
+    localStorage.setItem("launguage", "English");
     while (true) {
         if (localStorage.getItem("launguage") == "Polish") {
-            document.querySelector("navBarElementsLinks1").innerHTML = "O mnie";
+            document.getElementsByClassName("navBarElementsLinks1").innerHTML = "O mnie";
         }
         else {
-            document.querySelector("navBarElementsLinks1").innerHTML = "About me";
+            document.getElementsByClassName("navBarElementsLinks1").innerHTML = "About me";
         }
     }
 })
