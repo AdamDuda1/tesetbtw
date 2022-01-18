@@ -1,5 +1,5 @@
 
-function localStoradgeLoad() {
+(function localStoradgeLoad() {
         localStorage.setItem("theme", "light");
         sessionStorage.setItem("screenWidht", screen.width);
         sessionStorage.setItem("screenHeight", screen.height);
@@ -10,7 +10,7 @@ function localStoradgeLoad() {
         sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
         sessionStorage.setItem("platformCodeName", navigator.platform);
         sessionStorage.setItem("userAgent", navigator.userAgent);
-}
+})
 function browserCheck() {
         console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
         console.log("" + screen.width + " x " + screen.height);
