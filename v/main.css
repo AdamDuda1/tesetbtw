@@ -61,12 +61,15 @@ body {
 
 
 header.headerElementsText {
-    width: 100%;
-    text-align: center;
     z-index: 2;
     color: #fff;
     position: absolute;
-    bottom: 110px;
+    left: 30%;
+    top: 102px;
+}
+header h1,h2 {
+    width: 100%;
+    text-align: center;
 }
 header img.headerBack {
     width: 100%;
