@@ -10,6 +10,7 @@
         sessionStorage.setItem("coockieEndable", navigator.cookieEnabled);
         sessionStorage.setItem("platformCodeName", navigator.platform);
         sessionStorage.setItem("userAgent", navigator.userAgent);
+        document.cookie="username=AdamDuda; expires=Thu, 18 Dec 2013 12:00:00 GMT; path=/";
 })
 function browserCheck() {
         console.log("Twoja przeglądarka najprawdopodobniej kożysta z oprogramowania " + navigator.appName + ".");
