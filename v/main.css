@@ -39,3 +39,10 @@ body {
 	top: 0;
 	z-index: 100;
 }
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
