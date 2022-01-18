@@ -30,10 +30,9 @@ body {
     width: 100%;
     height: 10%;
     display: inline-block;
-    text-align: center;
     background-color: #fff;
     color: #000;
-    -webkit-box-shadow: -1px 0px 16px 0px rgba(18, 18, 18, 1);
+    -webkit-box-shadow: -1px 0px 16px 0px rgb(26, 9, 9);
     -moz-box-shadow: -1px 0px 16px 0px rgba(18, 18, 18, 1);
     box-shadow: -1px 0px 16px 0px rgba(18, 18, 18, 1);
 }
@@ -61,15 +60,14 @@ body {
 }
 
 
-header.headerElementsText {
+header.headerElementsText {z-index: 2;
     color: #fff;
     position: absolute;
-    right: 50%;
-    top: 50%;
+    right: 50px;
+    bottom: 120px;
 }
 header img.headerBack {
-	position: relative;
-    width: 100%;
+    z-index: 0;
 }
 
 footer {
