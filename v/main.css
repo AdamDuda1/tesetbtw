@@ -53,12 +53,14 @@ body {
 
 
 header.headerElementsText {
+    z-index: 50;
     color: #fff;
     position: fixed;
     left: 50%;
     top: 50%;
 }
 header img.headerBack {
+	position: absolute;
     z-index: 1;
     width: 100%;
 }
