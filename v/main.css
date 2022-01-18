@@ -51,7 +51,7 @@ body {
 }
 
 
-header h1 {
+header.headerElementsText {
     color: #fff;
     top: 50%;
     left: 50%;
