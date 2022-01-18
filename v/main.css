@@ -53,10 +53,9 @@ body {
 
 
 header.headerElementsText {
-    color: #fff;
-    top: 50%;
+    color: #fff;    
+    position: absolute;
     left: 50%;
-    position: relative;
 }
 header img.headerBack {
     z-index: 1;
