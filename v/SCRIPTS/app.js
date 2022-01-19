@@ -4,7 +4,7 @@ const sunico = document.getElementsByClassName("navBarElementsLinks4")
 console.log(sunico);
 console.log(moonico);
 
-moonico.addEventListener("click", () => {
+moonico.addEventListener("onClick", () => {
         console.log(moonico);
 })
 sunico.addEventListener("click", () => {
