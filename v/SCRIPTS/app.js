@@ -1,5 +1,5 @@
 const moonico = document.getElementsByClassName("moon-icon")
-const sunico = document.getElementsByClassName("sun-icon")
+const sunico = document.getElementsByClassName("navBarElementsLinks4")
 
 console.log(sunico);
 console.log(moonico);
