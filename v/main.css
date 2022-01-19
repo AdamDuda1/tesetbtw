@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow-y: hidden;
+    overflow-x: hidden;
     font-family: 'Dongle', sans-serif;
     background-color: #fff;
     color: black;
