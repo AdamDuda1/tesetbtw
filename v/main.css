@@ -73,8 +73,7 @@ header h1,h2 {
     position: relative;
     width: 100%;
     text-align: center;
-    left: 30%;
-    top: 102px;
+    bottom: 300px;
 }
 
 footer {
