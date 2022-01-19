@@ -4,13 +4,12 @@ const sunico = document.getElementsByClassName("navBarElementsLinks4")
 console.log(sunico);
 console.log(moonico);
 
-moonico.addEventListener("onClick", () => {
+moonico.addEventListener('click', () => {
         console.log(moonico);
 })
-sunico.addEventListener("onClick", () => {
-        console.log(sunico);
+sunico.addEventListener('click', () => {
+        alert('a to funkcja anonimowa');
 })
-
 (function localStoradgeLoad() {
         localStorage.setItem("theme", "light");
         sessionStorage.setItem("screenWidht", screen.width);
