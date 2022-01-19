@@ -7,7 +7,7 @@ console.log(moonico);
 moonico.addEventListener("onClick", () => {
         console.log(moonico);
 })
-sunico.addEventListener("click", () => {
+sunico.addEventListener("onClick", () => {
         console.log(sunico);
 })
 
