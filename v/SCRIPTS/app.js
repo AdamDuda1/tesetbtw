@@ -1,3 +1,15 @@
+const moonico = document.getElementsByClassName("moon-icon")
+const sunico = document.getElementsByClassName("sun-icon")
+
+console.log(sunico);
+console.log(moonico);
+
+moonico.addEventListener("click", () => {
+        console.log(moonico);
+})
+sunico.addEventListener("click", () => {
+        console.log(sunico);
+})
 
 (function localStoradgeLoad() {
         localStorage.setItem("theme", "light");
