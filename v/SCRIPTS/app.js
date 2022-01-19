@@ -8,7 +8,7 @@ moonico.addEventListener('click', () => {
         console.log(moonico);
 })
 sunico.addEventListener('click', () => {
-        alert('a to funkcja anonimowa');
+        console.log(sunico);
 })
 (function localStoradgeLoad() {
         localStorage.setItem("theme", "light");
