@@ -14,10 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow-x: hidden;
     font-family: 'Dongle', sans-serif;
-    background-color: #fff;
-    color: black;
 }
 .navBar {
 	width: 100%;
