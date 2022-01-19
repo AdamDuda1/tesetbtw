@@ -35,7 +35,8 @@ body {
     box-shadow: -1px 0px 16px 0px rgba(18, 18, 18, 1);
 }
 .navBarLogo {
-    font-size: 81%;
+    position: relative;
+    font-size: 200%;
     right: 20px;
 }
 .navBarElements {
