@@ -36,10 +36,12 @@ body {
 }
 .navBarLogo {
     position: relative;
-    font-size: 200%;
-    right: 20px;
+    font-size: 400%;
+    left: 10px;
+    bottom: 5px;
 }
 .navBarElements {
+    float: right;
     position: relative;
     right: 80%;
 }
