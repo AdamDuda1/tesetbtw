@@ -6,11 +6,16 @@ console.log(moonico);
 
 moonico.addEventListener('click', () => {
         console.log(moonico);
+        moonstyle.display = none;
+        sunico.style.display = block;
 })
 sunico.addEventListener('click', () => {
         console.log(sunico);
+        sunico.style.display = none;
+        moonico.style.display = block;
 })
 (function localStoradgeLoad() {
+        sunico.style.display = none;
         localStorage.setItem("theme", "light");
         sessionStorage.setItem("screenWidht", screen.width);
         sessionStorage.setItem("screenHeight", screen.height);
