@@ -60,20 +60,19 @@ body {
 }
 
 
-header.headerElementsText {
+
+header.headerBackImg {
+    width: 100%;
+    z-index: 0;
+}
+header h1,h2 {
     z-index: 2;
     color: #fff;
     position: absolute;
-    left: 30%;
-    top: 102px;
-}
-header h1,h2 {
     width: 100%;
     text-align: center;
-}
-header img.headerBack {
-    width: 100%;
-    z-index: 0;
+    left: 30%;
+    top: 102px;
 }
 
 footer {
