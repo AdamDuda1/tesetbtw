@@ -32,7 +32,7 @@ body { overflow-x: hidden; background-color: var(--background-color); color: var
 @media (max-width: 1020px) { .navBarElements { display: none; } }
 header h1 { font-family: 'Mochiy Pop P One', sans-serif; }
 .headerElements, .headerTitle { width: 100%; }
-.headerElements { height: 100%; background-color: var(--motive-color); transition-duration: .25s; }
+.headerElements { height: 100%; background-color: var(--motive-color); position: relative; top: -24px; z-index: -10; transition-duration: .25s; }
 .headerElements:hover { background-color: var(--motive-color-2); }
 .headerTitle { text-align: center; }
 .headerLearnMoreButton, .headerStartLearnButton { width: 130px; height: 45px; color: var(--motive-color); background-color: #fff; text-decoration: none; border: 2px solid var(--motive-color); transition-duration: .25s; }
