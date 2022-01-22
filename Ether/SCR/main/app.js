@@ -29,5 +29,10 @@ function change_lang() {
 }
 
 function langUpdate() {
-    document.querySelector('.footerButton').innerHTML = "Polish";
+    if (lang = "pl") {
+        document.querySelector('.footerButton').innerHTML = "Polish";
+    }
+    else if (lang = "en") {
+        document.querySelector('.footerButton').innerHTML = "English";
+    }
 }
