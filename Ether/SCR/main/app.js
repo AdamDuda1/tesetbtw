@@ -3,10 +3,11 @@ let lang = localStorage.getItem("lang");
 
 function setup() {
     console.log("The page has loaded successfully.");
-    localStorage.setItem("lang", "en");
+    //localStorage.setItem("lang", "en");
 
     if (lang = "en") {
         console.log(".localStorage has loaded successfully.");
+        langUpdate();
     }
     else if (lang = "pl") {
         langUpdate();
