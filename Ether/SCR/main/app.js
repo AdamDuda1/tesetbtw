@@ -24,6 +24,7 @@ function change_lang() {
         document.querySelector('body').setAttribute("lang", "en");
     }
     console.log("Your language: " + localStorage.getItem("lang") + ".");
+    console.log("------------------");
     langUpdate();
 }
 
