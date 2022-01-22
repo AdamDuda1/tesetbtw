@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ether program is a simple project developed by Adam Duda.">
+    <meta name="author" content="Adam Duda">
+    <meta name="keywords" content="Ether, Program, Adam, Duda, System, programming, project, HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/AdamDuda1/adamduda1.github.io/main/favico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Oswald:wght@300;400;700&family=Roboto:wght@300;700&display=swap">
+    <title>What's Ether Program?</title>
+</head>
+
+<body onload='setup();'>
+
+    <nav>
+        <div class="navBar">
+            <div class="navBarLogo">
+                <a href="#">
+                    <img src="https://raw.githubusercontent.com/AdamDuda1/adamduda1.github.io/main/favico.ico"
+                        alt="Ether Program logo" />
+                    <div class="navBarLogoText">Ether</div>
+                </a>
+            </div>
+            <div class="navBarElements">
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>About</b></a>
+                <a href="#"><b>Projects</b></a>
+                <a href="#"><b>Developers </b></a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="headerElements">
+            <div class="headerTitle">
+                <h1 class="title">What's Ether?</h1>
+                <span class="subtitle"></span>
+                <div class="headerButtons">
+                    <a class="headerButton1" href="#about">
+                        <div class="headerLearnMoreButton">
+                            Learn More
+                        </div>
+                    </a>
+                    <br>
+                    <a class="headerButton2" href="/learn">
+                        <div class="headerStartLearnButton">
+                            Start Learn
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <br><br><br><br><br><br><br><br><br><br>
+        <button onclick="change_lang()" class="change_lang"></button>
+        <br><br><br><br><br><br><br><br><br><br>
+    </article>
+    <footer>
+        <div class="footerInfo" onClick='alert("Lern more: www.copyright.com/about/")'>
+            <div class="footerSpace"></div>
+            &copy;2022 by Adam Duda, Ether Project. All rights reserved.
+            <div class="footerSpace"></div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+        $(document).ready(function () {
+            var NavY = $('.navBar').offset().top;
+
+            var stickyNav = function () {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.navBar').addClass('sticky');
+                } else {
+                    $('.navBar').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html>
