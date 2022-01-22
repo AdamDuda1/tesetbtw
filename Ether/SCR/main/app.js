@@ -31,8 +31,17 @@ function change_lang() {
 function langUpdate() {
     if (lang = "pl") {
         document.querySelector('.footerButton').innerHTML = "Polish";
+        document.querySelector('header .subtitle').innerHTML = "Ether to projekt, który jest rozwijany pod kątem nauki programowania. Na naszej stronie, możesz nauczyć się tworzyć podstawowe strony internetowe. Zapraszamy! ";
+        document.querySelector('header .title').innerHTML = "Co to Ether?";
+        document.querySelector('').innerHTML = "";
+        document.querySelector('').innerHTML = "";
+        document.querySelector('').innerHTML = "";
     }
     else if (lang = "en") {
         document.querySelector('.footerButton').innerHTML = "English";
+        document.querySelector('header .subtitle').innerHTML = "Ether is a project that is being developed with the focus on learning programming. On our website, you can learn how to create basic websites. We invite you!";
+        document.querySelector('header .title').innerHTML = "What's Ether?";
+        document.querySelector('').innerHTML = "";
+        document.querySelector('').innerHTML = "";
     }
 }
