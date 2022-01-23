@@ -1,3 +1,74 @@
+<!--DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ether program is a simple project developed by Adam Duda.">
+    <meta name="author" content="Adam Duda">
+    <meta name="keywords" content="Ether, Program, Adam, Duda, System, programming, project, HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="Ether/main.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/AdamDuda1/adamduda1.github.io/main/favico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Oswald:wght@300;400;700&family=Roboto:wght@300;700&display=swap">
+    <title>Error 404 - Ether couldn't find your page.</title>
+</head>
+
+<body onLoad='setup();'>
+
+    <header>
+        <span class="404subtitle">Error 404</span>
+        <h1 class="404title">Ether couldn't find your page.</h1>
+    </header>
+
+    <footer>
+        <div class="footerInfo">
+            <div class="footerSpace"></div>
+            <div class="footerText" onClick='alert("Lern more: www.copyright.com/about/")'>&copy;2022 by Adam Duda,
+                Ether Project. All rights reserved.</div>
+            <div class="footerButton" onClick='change_lang()'>
+                English
+            </div>
+            <div class="footerSpace"></div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="Ether/SCR/main/app.js"></script>
+    <script type="text/javascript" src="Ether/SCR/jQuery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var NavY = $('.navBar').offset().top;
+
+            var stickyNav = function () {
+                var ScrollY = $(window).scrollTop();
+
+                if (ScrollY > NavY) {
+                    $('.navBar').addClass('sticky');
+                } else {
+                    $('.navBar').removeClass('sticky');
+                }
+            };
+
+            stickyNav();
+
+            $(window).scroll(function () {
+                stickyNav();
+            });
+        });
+    </script>
+</body>
+
+</html-->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +103,8 @@
                 <a href="#"><b>Home</b></a>
                 <a href="#"><b>About</b></a>
                 <a href="#"><b>Projects</b></a>
-                <a href="#"><b>Developers </b></a>
+                <a href="#"><b>Developers</b></a>
+                <div class="navBarMenuContainer"></div>
             </div>
         </div>
     </nav>
@@ -40,7 +112,7 @@
         <div class="headerElements">
             <div class="headerTitle">
                 <h1 class="title">What's Ether?</h1>
-                <span class="subtitle">Ether is a project that is being developed with the focus on learning programming. On our website, you can learn how to create basic websites. We invite you!</span>
+                <span class="subtitle"></span>
                 <div class="headerButtons">
                     <a class="headerButton1" href="#about">
                         <div class="headerLearnMoreButton">
@@ -59,13 +131,14 @@
     </header>
     <article>
         <br><br><br><br><br><br><br><br><br><br>
+        <button onclick="change_lang()" class="change_lang"></button>
         <br><br><br><br><br><br><br><br><br><br>
     </article>
     <footer>
-        <div class="footerInfo">
+        <div class="footerInfo" onClick='alert("Lern more: www.copyright.com/about/")'>
             <div class="footerSpace"></div>
-            <div class="footerText" onClick='if (lang = "en") { alert("Lern more: www.copyright.com/about/") } else if (lang = "pl") { alert("Doweidz się więcej: www.copyright.com/about/") }'>&copy;2022 by Adam Duda, Ether Project. All rights reserved.</div>
-            <div class="footerButton" onClick='change_lang()'>
+            &copy;2022 by Adam Duda, Ether Project. All rights reserved.
+            <div class="footerButton">
                 English
             </div>
             <div class="footerSpace"></div>
@@ -73,8 +146,8 @@
 
     </footer>
 
-    <script type="text/javascript" src="SCR/main/app.js"></script>
-    <script type="text/javascript" src="SCR/jQuery.js"></script>
+    <script type="text/javascript" src="SCR/app.js"></script>
+    <script type="text/javascript" src="jQuery.js"></script>
     <script>
         $(document).ready(function () {
             var NavY = $('.navBar').offset().top;
